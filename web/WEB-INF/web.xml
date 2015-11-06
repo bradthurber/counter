@@ -27,7 +27,7 @@ id="WebApp_ID" version="3.0">
   
   <session-config>
      <cookie-config>
-       <domain>adesa.com</domain>
+       <domain>.adesa.com</domain>
      </cookie-config>
      <session-timeout>30</session-timeout>
   </session-config>
