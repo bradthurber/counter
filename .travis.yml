@@ -1,6 +1,8 @@
 language: java
 addons:
   artifacts: true
+    paths:
+    - $(ls dist/*.war | tr "\n" ":")
   s3_region: "us-east-1"
-
+  debug: true
 
