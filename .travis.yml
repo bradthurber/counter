@@ -1,8 +1,22 @@
 language: java
+jdk:
+  - oraclejdk8
 addons:
-  artifacts: true
+  artifacts:
+    debug: true
     paths:
-      - $(ls dist/*.war | tr "\n" ":")
-  s3_region: "us-east-1"
-  debug: true
+      - $HOME/dist/counter.war
+    target_paths: travis-ci-bet/$TRAVIS_BUILD_NUMBER
+    #working_dir: WORKING_DIR
+    bucket: travis-ci-bet
+    s3_region: us-east-1 
 
+# get us on the new container based builds, we're not using any fancyness
+sudo: false  
+
+branches:
+  only:
+  - master
+  
+notifications:
+  email: false
