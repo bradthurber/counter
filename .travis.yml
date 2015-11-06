@@ -1,1 +1,8 @@
 language: java
+addons:
+  artifacts: true
+  s3_region: "us-east-1"
+  ARTIFACTS_KEY=AKIAIOIN2Q7HWSGO6BYA
+  ARTIFACTS_SECRET=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
+  ARTIFACTS_BUCKET=travis-ci-bet
+
