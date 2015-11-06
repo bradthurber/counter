@@ -5,7 +5,7 @@ addons:
   artifacts:
     debug: true
     paths:
-      - $HOME/dist/counter.war
+      - dist/counter.war
     target_paths: travis-ci-bet/$TRAVIS_BUILD_NUMBER
     #working_dir: WORKING_DIR
     bucket: travis-ci-bet
