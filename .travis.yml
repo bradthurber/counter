@@ -8,7 +8,7 @@ addons:
     debug: true
     paths:
       - dist/counter.war
-    target_paths: travis-ci-bet/$TRAVIS_BUILD_NUMBER
+    target_paths: $TRAVIS_BRANCH/$TRAVIS_BUILD_NUMBER
     #working_dir: WORKING_DIR
     bucket: travis-ci-bet
     s3_region: us-east-1 
