@@ -6,7 +6,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
 id="WebApp_ID" version="3.0">
   
-  <display-name>Counter</display-name>
+  <display-name>Counter App</display-name>
   <description>Counter</description>
 
   <distributable/>
@@ -29,6 +29,6 @@ id="WebApp_ID" version="3.0">
      <cookie-config>
        <domain>.adesa.com</domain>
      </cookie-config>
-     <session-timeout>30</session-timeout>
+     <session-timeout>60</session-timeout>
   </session-config>
 </web-app>
